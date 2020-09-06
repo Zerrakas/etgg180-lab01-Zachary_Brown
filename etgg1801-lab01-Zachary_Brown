@@ -15,14 +15,11 @@ print(firstName, end=' ')
 print(lastName)
 
 from math import sqrt
-
 hypotenuse = sqrt(opposite * opposite + adjacent * adjacent)
 print(f"The hypotenuse length is {hypotenuse} if the other sides are {opposite} and {adjacent}.")
 input("Press Enter to continue...")
 
-
 print('Welcome to the Hypotenuse Calculator!')
-
 print("Please enter your name.")
 userName = input()
 print('Hello ' + userName + '!')
