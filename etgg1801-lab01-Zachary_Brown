@@ -15,20 +15,20 @@ print(firstName, end=' ')
 print(lastName)
 
 from math import sqrt
+
 hypotenuse = sqrt(opposite * opposite + adjacent * adjacent)
 print(f"The hypotenuse length is {hypotenuse} if the other sides are {opposite} and {adjacent}.")
 input("Press Enter to continue...")
 
 print('Welcome to the Hypotenuse Calculator!')
-print("Please enter your name.")
-userName = input()
-print('Hello ' + userName + '!')
-print('What is the length of the first side of your triangle?')
-opposite = input()
-print('What is the length of the second side of your triangle?')
-adjacent = input()
+
+userName = input("Please enter your name: ")
+print("Hello " + userName + "!")
+side_a = float(input("Please enter the length of 'side a' on your triangle: "))
+side_b = float(input("Please enter the length of 'side b' on your triangle: "))
 print(f"Thank you, {userName}!")
 input("Press Enter to continue...")
-print(f"The hypotenuse length is {hypotenuse} if the other sides are {opposite} and {adjacent}.")
+side_c = sqrt(side_a * side_a + side_b * side_b)
+print(f"The hypotenuse length is {side_c} if the other sides are {side_a} and {side_b}.")
 print("Thank you for using the Hypotenuse Calculator!")
 input("Press Enter to end")
